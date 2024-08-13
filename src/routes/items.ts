@@ -1,9 +1,8 @@
 import { Router } from "express";
+import { index } from "../controllers/itemsController";
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.send({ message: "Hello from items" });
-});
+router.get("/", index); // OBTENER TODOS LOS ITEMS
 
 export default router;
